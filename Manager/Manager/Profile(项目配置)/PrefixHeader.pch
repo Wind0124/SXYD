@@ -1,0 +1,86 @@
+//
+//  PrefixHeader.pch
+//  Manager
+//
+//  Created by vpclub on 2018/11/26.
+//  Copyright © 2018 vpclub. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AppDelegate.h"
+// 第三方库
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+#import <AFNetworking/AFNetworking.h>
+#import "UIImageView+WebCache.h"
+#import "UIImage+GIF.h"
+#import "UIButton+WebCache.h"
+#import "JSONModel.h"
+#import "MyMD5.h"
+#import "Masonry.h"
+#import <ShareSDK/ShareSDK.h>
+
+// Category
+#import "NSString+ToString.h"
+#import "NSString+Regular.h"
+#import "UIView+Extension.h"
+
+// 基类
+#import "BaseNav.h"
+#import "BaseVC.h"
+#import "BaseButton.h"
+#import "BaseModel.h"
+
+// Model
+#import "ResponseModel.h"
+#import "HeadModel.h"
+#import "UserModel.h"
+#import "APPVersionModel.h"
+#import "WorkbenchModel.h"
+#import "EmployeeModel.h"
+#import "PageModel.h"
+#import "AdvertInfoModel.h"
+#import "NoticeModel.h"
+#import "ActivityModel.h"
+#import "ActivityHeadModel.h"
+#import "ActivityChildModel.h"
+#import "ActivityBusinessModel.h"
+#import "ShopInfoModel.h"
+#import "ShareModel.h"
+#import "ShareSDKModel.h"
+#import "AuthUserInfoModel.h"
+#import "AllStatisticsModel.h"
+#import "StatisticsModel.h"
+#import "WeekMonthRewardModel.h"
+#import "AuthDetailModel.h"
+#import "ChannelModel.h"
+#import "OpenAccountMobileModel.h"
+#import "MobileStateModel.h"
+#import "PrefectureModel.h"
+#import "BusinessApiGradeModel.h"
+#import "BusinessGradeModel.h"
+#import "BusinessContractModel.h"
+#import "IDInfoModel.h"
+#import "OrderCenterModel.h"
+#import "SMRZParametersModel.h"
+
+// 宏定义
+#import "APIDefine.h"
+#import "APIDefine2.h"
+#import "FunctionDefine.h"
+#import "BaseDefine.h"
+#import "BlockDefine.h"
+// 网络
+#import "APIManager.h"
+#import "APIManager2.h"
+
+// 分享
+#import "ShareSDKManager.h"
+
+
+#endif /* PrefixHeader_pch */

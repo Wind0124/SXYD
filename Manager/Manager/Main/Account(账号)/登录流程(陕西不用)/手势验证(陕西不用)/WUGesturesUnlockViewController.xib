@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WUGesturesUnlockViewController">
+            <connections>
+                <outlet property="gesturesUnlockView" destination="EcM-Ux-9L5" id="wQe-i7-MwS"/>
+                <outlet property="headIconHeightConstraint" destination="yoo-hG-PJz" id="FSx-TX-lag"/>
+                <outlet property="headIconImageView" destination="d8f-JI-hYW" id="qXA-Wl-xQ5"/>
+                <outlet property="otherAcountLoginButton" destination="hgo-5j-l5s" id="SAf-gt-bAQ"/>
+                <outlet property="resetGesturesPasswordButton" destination="Bjd-m7-W2M" id="p8s-Y4-keU"/>
+                <outlet property="statusLabel" destination="a0y-Gp-tdy" id="Grw-2a-1rX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请绘制手势密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0y-Gp-tdy">
+                    <rect key="frame" x="0.0" y="207" width="320" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="Y3R-wi-cXN"/>
+                        <constraint firstAttribute="height" constant="20" id="woR-kS-Q0w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.43524378538131714" green="0.4353230893611908" blue="0.43523877859115601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjd-m7-W2M">
+                    <rect key="frame" x="131" y="515" width="58" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="jcq-TJ-uTr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="重新绘制">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="resetGesturePassword:" destination="-1" eventType="touchUpInside" id="deQ-ZB-WoJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgo-5j-l5s">
+                    <rect key="frame" x="114" y="515" width="92" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="其他账号登录">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="enterLoginPage:" destination="-1" eventType="touchUpInside" id="1cQ-Ob-rRA"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcM-Ux-9L5" customClass="WUGesturesUnlockView">
+                    <rect key="frame" x="0.0" y="227" width="320" height="288"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EcM-Ux-9L5" secondAttribute="height" multiplier="20:18" id="acw-1Z-4AW"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="H5_logo" translatesAutoresizingMaskIntoConstraints="NO" id="d8f-JI-hYW">
+                    <rect key="frame" x="111.5" y="67" width="97.5" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="yoo-hG-PJz"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chinaMobileLogo" translatesAutoresizingMaskIntoConstraints="NO" id="sIb-4i-May">
+                    <rect key="frame" x="122.5" y="530" width="75" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="khg-DQ-Wlf"/>
+                        <constraint firstAttribute="width" constant="75" id="z4w-DM-oGV"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bjd-m7-W2M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1VX-NU-Oy6"/>
+                <constraint firstItem="EcM-Ux-9L5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ae3-my-rsN"/>
+                <constraint firstItem="sIb-4i-May" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Edx-AD-3eX"/>
+                <constraint firstAttribute="trailing" secondItem="EcM-Ux-9L5" secondAttribute="trailing" id="KRc-Cf-SI1"/>
+                <constraint firstItem="a0y-Gp-tdy" firstAttribute="top" secondItem="d8f-JI-hYW" secondAttribute="bottom" constant="20" id="KaB-Kz-bAz"/>
+                <constraint firstItem="a0y-Gp-tdy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tbe-S4-hUd"/>
+                <constraint firstItem="d8f-JI-hYW" firstAttribute="width" secondItem="d8f-JI-hYW" secondAttribute="height" multiplier="26:32" id="aqx-VN-diS"/>
+                <constraint firstItem="Bjd-m7-W2M" firstAttribute="top" secondItem="EcM-Ux-9L5" secondAttribute="bottom" id="bFG-jo-vCT"/>
+                <constraint firstItem="hgo-5j-l5s" firstAttribute="top" secondItem="EcM-Ux-9L5" secondAttribute="bottom" id="pBV-hW-CQr"/>
+                <constraint firstItem="hgo-5j-l5s" firstAttribute="centerX" secondItem="EcM-Ux-9L5" secondAttribute="centerX" id="rTZ-Ml-DLm"/>
+                <constraint firstAttribute="bottom" secondItem="sIb-4i-May" secondAttribute="bottom" constant="15" id="sPw-5K-1cA"/>
+                <constraint firstItem="EcM-Ux-9L5" firstAttribute="top" secondItem="a0y-Gp-tdy" secondAttribute="bottom" id="xMy-iU-2l3"/>
+                <constraint firstItem="d8f-JI-hYW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="67" id="zOm-FB-yfX"/>
+                <constraint firstItem="d8f-JI-hYW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zgj-7W-wA3"/>
+            </constraints>
+            <point key="canvasLocation" x="-76" y="321"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="H5_logo" width="129" height="160"/>
+        <image name="chinaMobileLogo" width="75" height="23"/>
+    </resources>
+</document>

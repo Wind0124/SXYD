@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StepTwo_DownloadTipView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lao-Tl-WHe">
+                    <rect key="frame" x="0.0" y="477" width="375" height="190"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下载提示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8a-lK-dBa">
+                            <rect key="frame" x="15" y="0.0" width="57.5" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="lVm-pl-a2T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m68-wo-pmg">
+                            <rect key="frame" x="0.0" y="44" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="9Jt-t6-uBN"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmX-do-ogE">
+                            <rect key="frame" x="0.0" y="140" width="375" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.51764705882352935" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="YcX-et-BP5"/>
+                            </constraints>
+                            <state key="normal" title="确认"/>
+                            <connections>
+                                <action selector="confirmAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="m9I-Dw-4Dw"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送SMRZ到10085，获取下载方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJy-H0-sJy">
+                            <rect key="frame" x="76" y="85" width="223" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="m68-wo-pmg" secondAttribute="trailing" id="15P-9j-sMV"/>
+                        <constraint firstAttribute="bottom" secondItem="fmX-do-ogE" secondAttribute="bottom" id="3Ut-ON-de6"/>
+                        <constraint firstItem="m68-wo-pmg" firstAttribute="top" secondItem="g8a-lK-dBa" secondAttribute="bottom" id="6DJ-ed-WIu"/>
+                        <constraint firstItem="g8a-lK-dBa" firstAttribute="leading" secondItem="Lao-Tl-WHe" secondAttribute="leading" constant="15" id="B7Q-D5-3ew"/>
+                        <constraint firstAttribute="height" constant="190" id="HX4-Oq-oQK"/>
+                        <constraint firstItem="KJy-H0-sJy" firstAttribute="top" secondItem="m68-wo-pmg" secondAttribute="bottom" constant="40" id="LZR-2j-ckV"/>
+                        <constraint firstItem="fmX-do-ogE" firstAttribute="leading" secondItem="Lao-Tl-WHe" secondAttribute="leading" id="Tsa-0y-qR6"/>
+                        <constraint firstItem="g8a-lK-dBa" firstAttribute="top" secondItem="Lao-Tl-WHe" secondAttribute="top" id="Y9y-VL-JUX"/>
+                        <constraint firstItem="m68-wo-pmg" firstAttribute="leading" secondItem="Lao-Tl-WHe" secondAttribute="leading" id="nT8-q3-2sK"/>
+                        <constraint firstAttribute="trailing" secondItem="fmX-do-ogE" secondAttribute="trailing" id="oOO-qy-q2A"/>
+                        <constraint firstItem="KJy-H0-sJy" firstAttribute="centerX" secondItem="Lao-Tl-WHe" secondAttribute="centerX" id="xuz-GT-blZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Lao-Tl-WHe" secondAttribute="bottom" id="MLN-UX-TMs"/>
+                <constraint firstItem="Lao-Tl-WHe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dD9-pd-HvH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Lao-Tl-WHe" secondAttribute="trailing" id="pQk-oS-AhJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="confirmBtn" destination="fmX-do-ogE" id="4IP-Dq-hRn"/>
+            </connections>
+        </view>
+    </objects>
+</document>

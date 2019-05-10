@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StepOne_PhoneCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNF-FV-Nsd">
+                        <rect key="frame" x="15" y="5" width="290" height="39.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6j-dW-vls">
+                                <rect key="frame" x="15" y="11.5" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-fw-gPv">
+                                <rect key="frame" x="190" y="11.5" width="100" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="JQo-sb-h9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.81568627450980391" green="0.0078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shop_business_check" translatesAutoresizingMaskIntoConstraints="NO" id="K4b-1f-sxn">
+                                <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="QTp-e6-Il2"/>
+                                    <constraint firstAttribute="width" constant="16" id="jFp-Op-bOt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60022818749999995" green="1" blue="0.30318418660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K4b-1f-sxn" firstAttribute="top" secondItem="YNF-FV-Nsd" secondAttribute="top" id="0cz-jT-iqC"/>
+                            <constraint firstItem="K4b-1f-sxn" firstAttribute="leading" secondItem="YNF-FV-Nsd" secondAttribute="leading" id="59l-eR-cMQ"/>
+                            <constraint firstItem="fSh-fw-gPv" firstAttribute="centerY" secondItem="YNF-FV-Nsd" secondAttribute="centerY" id="Pi6-SI-9we"/>
+                            <constraint firstAttribute="trailing" secondItem="fSh-fw-gPv" secondAttribute="trailing" id="XnB-J8-YFI"/>
+                            <constraint firstItem="e6j-dW-vls" firstAttribute="leading" secondItem="YNF-FV-Nsd" secondAttribute="leading" constant="15" id="aGn-y2-6hF"/>
+                            <constraint firstItem="e6j-dW-vls" firstAttribute="centerY" secondItem="YNF-FV-Nsd" secondAttribute="centerY" id="xJY-jW-Di3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="YNF-FV-Nsd" secondAttribute="bottom" constant="5" id="UcK-X3-7OG"/>
+                    <constraint firstAttribute="trailing" secondItem="YNF-FV-Nsd" secondAttribute="trailing" constant="15" id="c4F-ZE-mwy"/>
+                    <constraint firstItem="YNF-FV-Nsd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gnF-3k-tKL"/>
+                    <constraint firstItem="YNF-FV-Nsd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="hqJ-eE-Nhp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgView" destination="YNF-FV-Nsd" id="HP7-HN-7PK"/>
+                <outlet property="cornerImgView" destination="K4b-1f-sxn" id="3Pi-rN-JYJ"/>
+                <outlet property="phoneLabel" destination="e6j-dW-vls" id="7un-uW-EZH"/>
+                <outlet property="priceLabel" destination="fSh-fw-gPv" id="cs5-pS-Ybc"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="136.73163418290855"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shop_business_check" width="16" height="16"/>
+    </resources>
+</document>

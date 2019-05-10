@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideVC">
+            <connections>
+                <outlet property="bgBtn" destination="pvB-B0-sdq" id="bB5-7s-65p"/>
+                <outlet property="secondBtn" destination="ZSX-bh-h3m" id="L6n-Gz-P2k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvB-B0-sdq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="clickAction:" destination="-1" eventType="touchUpInside" id="Ir5-dy-cFY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSX-bh-h3m">
+                    <rect key="frame" x="305" y="50" width="50" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="9op-oT-Kvm"/>
+                        <constraint firstAttribute="height" constant="50" id="gaB-se-tXr"/>
+                    </constraints>
+                    <state key="normal" title="3S">
+                        <color key="titleColor" red="0.0" green="0.51764705882352935" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="AWy-UJ-anw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZSX-bh-h3m" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="0SH-zs-1Xj"/>
+                <constraint firstItem="pvB-B0-sdq" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="GSw-Ow-JmN"/>
+                <constraint firstItem="pvB-B0-sdq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="LOw-z8-jsk"/>
+                <constraint firstItem="pvB-B0-sdq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SQC-8y-2W4"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ZSX-bh-h3m" secondAttribute="trailing" constant="20" id="f5l-om-GRa"/>
+                <constraint firstItem="pvB-B0-sdq" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="rUB-Em-wii"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+        </view>
+    </objects>
+</document>

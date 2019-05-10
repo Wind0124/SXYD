@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgotPwdVC">
+            <connections>
+                <outlet property="confirmBtn" destination="sRb-HU-MEP" id="U5D-Nq-DKC"/>
+                <outlet property="passwordView" destination="Sd8-Mb-ugT" id="TES-V3-y1D"/>
+                <outlet property="passwordView2" destination="3y0-xI-tsz" id="MBa-Cz-t5Z"/>
+                <outlet property="phoneView" destination="apY-k3-7Of" id="xTf-93-I4c"/>
+                <outlet property="sendBtn" destination="YIg-a3-Uyx" id="kkh-Vi-g9x"/>
+                <outlet property="smsCodeView" destination="fwf-Vu-UsQ" id="Du4-le-R6W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apY-k3-7Of" customClass="InputBoxView">
+                    <rect key="frame" x="0.0" y="60" width="375" height="50"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="HFQ-Wg-drE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sd8-Mb-ugT" customClass="InputBoxView">
+                    <rect key="frame" x="0.0" y="160" width="375" height="50"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Ws1-pW-U6Y"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwf-Vu-UsQ" customClass="InputBoxView">
+                    <rect key="frame" x="0.0" y="110" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIg-a3-Uyx">
+                            <rect key="frame" x="248" y="10" width="77" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="获取验证码">
+                                <color key="titleColor" red="0.0" green="0.51764705882352935" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sendSMSCodeAction:" destination="-1" eventType="touchUpInside" id="K4P-om-56l"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YIg-a3-Uyx" secondAttribute="trailing" constant="50" id="VjT-In-xZb"/>
+                        <constraint firstItem="YIg-a3-Uyx" firstAttribute="centerY" secondItem="fwf-Vu-UsQ" secondAttribute="centerY" id="YfM-1G-w1v"/>
+                        <constraint firstAttribute="height" constant="50" id="Zp1-WN-vjO"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRb-HU-MEP">
+                    <rect key="frame" x="50" y="310" width="275" height="38"/>
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="LM9-ca-5Mh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmAction:" destination="-1" eventType="touchUpInside" id="1EO-cL-gYd"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3y0-xI-tsz" customClass="InputBoxView">
+                    <rect key="frame" x="0.0" y="210" width="375" height="50"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vc5-qy-urf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="sRb-HU-MEP" secondAttribute="trailing" constant="50" id="2Ik-Te-wca"/>
+                <constraint firstItem="apY-k3-7Of" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="2T4-qo-7eq"/>
+                <constraint firstAttribute="trailing" secondItem="Sd8-Mb-ugT" secondAttribute="trailing" id="3TR-rU-GTk"/>
+                <constraint firstItem="3y0-xI-tsz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FFG-sb-WLS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="3y0-xI-tsz" secondAttribute="trailing" id="FdN-ur-MsK"/>
+                <constraint firstItem="sRb-HU-MEP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="KRa-B2-38N"/>
+                <constraint firstItem="Sd8-Mb-ugT" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Le1-g4-rvV"/>
+                <constraint firstItem="fwf-Vu-UsQ" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="PDf-E3-iHm"/>
+                <constraint firstItem="fwf-Vu-UsQ" firstAttribute="top" secondItem="apY-k3-7Of" secondAttribute="bottom" id="VLH-sa-tRo"/>
+                <constraint firstItem="apY-k3-7Of" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="VRB-je-0bB"/>
+                <constraint firstItem="fwf-Vu-UsQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="WSE-cp-EBO"/>
+                <constraint firstItem="sRb-HU-MEP" firstAttribute="top" secondItem="3y0-xI-tsz" secondAttribute="bottom" constant="50" id="X2A-2t-Uct"/>
+                <constraint firstItem="3y0-xI-tsz" firstAttribute="top" secondItem="Sd8-Mb-ugT" secondAttribute="bottom" id="eby-PO-BoU"/>
+                <constraint firstItem="Sd8-Mb-ugT" firstAttribute="top" secondItem="fwf-Vu-UsQ" secondAttribute="bottom" id="fqy-p5-7CH"/>
+                <constraint firstItem="apY-k3-7Of" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="mmF-JJ-C7V"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

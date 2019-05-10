@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Business_Six_Cell" id="KGk-i7-Jjw" customClass="Business_Six_Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="319.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZt-Ej-vv9" customClass="GoodsView2">
+                        <rect key="frame" x="0.0" y="5" width="103.5" height="155"/>
+                        <color key="backgroundColor" red="0.60022818749999995" green="1" blue="0.30318418660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZ3-1o-1i2" customClass="GoodsView2">
+                        <rect key="frame" x="108.5" y="5" width="103" height="155"/>
+                        <color key="backgroundColor" red="0.60022818749999995" green="1" blue="0.30318418660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ug7-vq-9kw" customClass="GoodsView2">
+                        <rect key="frame" x="216.5" y="5" width="103.5" height="155"/>
+                        <color key="backgroundColor" red="0.60022818749999995" green="1" blue="0.30318418660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7R-NO-mVX" customClass="GoodsView2">
+                        <rect key="frame" x="1" y="165" width="103" height="154.5"/>
+                        <color key="backgroundColor" red="0.60022818749999995" green="1" blue="0.30318418660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view tag="104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoI-0q-z4m" customClass="GoodsView2">
+                        <rect key="frame" x="109" y="165" width="103" height="154.5"/>
+                        <color key="backgroundColor" red="0.60022818749999995" green="1" blue="0.30318418660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view tag="105" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpK-XH-d1s" customClass="GoodsView2">
+                        <rect key="frame" x="217" y="165" width="103" height="154.5"/>
+                        <color key="backgroundColor" red="0.60022818749999995" green="1" blue="0.30318418660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ug7-vq-9kw" firstAttribute="width" secondItem="XZt-Ej-vv9" secondAttribute="width" id="0se-NN-TJu"/>
+                    <constraint firstItem="i7R-NO-mVX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="BLA-qs-cc2"/>
+                    <constraint firstItem="VpK-XH-d1s" firstAttribute="leading" secondItem="LoI-0q-z4m" secondAttribute="trailing" constant="5" id="BeY-WH-keq"/>
+                    <constraint firstItem="Ug7-vq-9kw" firstAttribute="leading" secondItem="aZ3-1o-1i2" secondAttribute="trailing" constant="5" id="CKX-qk-w40"/>
+                    <constraint firstItem="LoI-0q-z4m" firstAttribute="leading" secondItem="i7R-NO-mVX" secondAttribute="trailing" constant="5" id="KgL-9P-jkO"/>
+                    <constraint firstItem="LoI-0q-z4m" firstAttribute="height" secondItem="aZ3-1o-1i2" secondAttribute="height" id="Nx1-BE-6XQ"/>
+                    <constraint firstItem="i7R-NO-mVX" firstAttribute="height" secondItem="XZt-Ej-vv9" secondAttribute="height" id="OtP-ZF-zYq"/>
+                    <constraint firstAttribute="bottom" secondItem="i7R-NO-mVX" secondAttribute="bottom" id="Pac-XV-QvK"/>
+                    <constraint firstItem="Ug7-vq-9kw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="QaQ-mE-kXa"/>
+                    <constraint firstItem="VpK-XH-d1s" firstAttribute="height" secondItem="Ug7-vq-9kw" secondAttribute="height" id="Rae-c3-qoc"/>
+                    <constraint firstAttribute="bottom" secondItem="LoI-0q-z4m" secondAttribute="bottom" id="ScI-oA-ImV"/>
+                    <constraint firstAttribute="trailing" secondItem="Ug7-vq-9kw" secondAttribute="trailing" id="W9H-lX-y89"/>
+                    <constraint firstItem="aZ3-1o-1i2" firstAttribute="width" secondItem="XZt-Ej-vv9" secondAttribute="width" id="YCA-64-ySC"/>
+                    <constraint firstItem="XZt-Ej-vv9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YWB-Sp-lt9"/>
+                    <constraint firstItem="LoI-0q-z4m" firstAttribute="top" secondItem="aZ3-1o-1i2" secondAttribute="bottom" constant="5" id="ZVJ-ut-agA"/>
+                    <constraint firstItem="XZt-Ej-vv9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="aq8-1b-WCN"/>
+                    <constraint firstItem="i7R-NO-mVX" firstAttribute="top" secondItem="XZt-Ej-vv9" secondAttribute="bottom" constant="5" id="eQF-so-t8G"/>
+                    <constraint firstItem="LoI-0q-z4m" firstAttribute="width" secondItem="i7R-NO-mVX" secondAttribute="width" id="hnn-DS-y0v"/>
+                    <constraint firstItem="VpK-XH-d1s" firstAttribute="top" secondItem="Ug7-vq-9kw" secondAttribute="bottom" constant="5" id="i5S-yg-rtn"/>
+                    <constraint firstAttribute="bottom" secondItem="VpK-XH-d1s" secondAttribute="bottom" id="iXo-3a-iMa"/>
+                    <constraint firstItem="aZ3-1o-1i2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ixX-WG-lcg"/>
+                    <constraint firstAttribute="trailing" secondItem="VpK-XH-d1s" secondAttribute="trailing" id="lZi-gY-TRV"/>
+                    <constraint firstItem="aZ3-1o-1i2" firstAttribute="leading" secondItem="XZt-Ej-vv9" secondAttribute="trailing" constant="5" id="pjw-5B-qdg"/>
+                    <constraint firstAttribute="bottom" secondItem="VpK-XH-d1s" secondAttribute="bottom" id="xdf-p3-mcd"/>
+                    <constraint firstItem="VpK-XH-d1s" firstAttribute="width" secondItem="i7R-NO-mVX" secondAttribute="width" id="xqc-kY-8oK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="129.59999999999999" y="-14.392803598200901"/>
+        </tableViewCell>
+    </objects>
+</document>

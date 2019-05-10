@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Child_Four_Cell" id="KGk-i7-Jjw" customClass="Child_Four_Cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yh-OU-fII">
+                        <rect key="frame" x="10" y="10" width="118" height="149.5"/>
+                        <connections>
+                            <action selector="pictureAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hEq-Lf-cp9"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQw-Zy-yo6">
+                        <rect key="frame" x="133" y="10" width="177" height="72.5"/>
+                        <connections>
+                            <action selector="pictureAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kTK-Hq-yax"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="482-yz-wXN">
+                        <rect key="frame" x="133" y="87.5" width="86" height="72"/>
+                        <connections>
+                            <action selector="pictureAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xKJ-26-A8B"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntt-6r-go4">
+                        <rect key="frame" x="224" y="87.5" width="86" height="72"/>
+                        <connections>
+                            <action selector="pictureAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Fq1-1d-ziZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="482-yz-wXN" firstAttribute="top" secondItem="EQw-Zy-yo6" secondAttribute="bottom" constant="5" id="5H7-uF-TSb"/>
+                    <constraint firstItem="EQw-Zy-yo6" firstAttribute="leading" secondItem="2yh-OU-fII" secondAttribute="trailing" constant="5" id="ANy-ai-gON"/>
+                    <constraint firstAttribute="bottom" secondItem="2yh-OU-fII" secondAttribute="bottom" constant="10" id="FGT-G3-GYG"/>
+                    <constraint firstItem="482-yz-wXN" firstAttribute="leading" secondItem="2yh-OU-fII" secondAttribute="trailing" constant="5" id="J9I-o1-bRC"/>
+                    <constraint firstItem="ntt-6r-go4" firstAttribute="top" secondItem="EQw-Zy-yo6" secondAttribute="bottom" constant="5" id="JAJ-hj-iDv"/>
+                    <constraint firstItem="ntt-6r-go4" firstAttribute="height" secondItem="EQw-Zy-yo6" secondAttribute="height" id="NAB-N2-NDf"/>
+                    <constraint firstAttribute="trailing" secondItem="EQw-Zy-yo6" secondAttribute="trailing" constant="10" id="OTF-b6-X1h"/>
+                    <constraint firstItem="ntt-6r-go4" firstAttribute="width" secondItem="482-yz-wXN" secondAttribute="width" id="PD1-GP-MYF"/>
+                    <constraint firstItem="EQw-Zy-yo6" firstAttribute="width" secondItem="2yh-OU-fII" secondAttribute="width" multiplier="3:2" id="aki-gp-mwq"/>
+                    <constraint firstItem="EQw-Zy-yo6" firstAttribute="top" secondItem="2yh-OU-fII" secondAttribute="top" id="auD-qh-0lD"/>
+                    <constraint firstAttribute="bottom" secondItem="482-yz-wXN" secondAttribute="bottom" constant="10" id="cK2-WF-J9K"/>
+                    <constraint firstItem="2yh-OU-fII" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eP1-mV-oHE"/>
+                    <constraint firstAttribute="bottom" secondItem="ntt-6r-go4" secondAttribute="bottom" constant="10" id="fVY-2C-ahW"/>
+                    <constraint firstItem="2yh-OU-fII" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kqh-Xv-0hv"/>
+                    <constraint firstItem="ntt-6r-go4" firstAttribute="leading" secondItem="482-yz-wXN" secondAttribute="trailing" constant="5" id="nyp-Gk-yip"/>
+                    <constraint firstAttribute="trailing" secondItem="ntt-6r-go4" secondAttribute="trailing" constant="10" id="oAw-Cd-lWQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="52.799999999999997" y="54.872563718140931"/>
+        </tableViewCell>
+    </objects>
+</document>
